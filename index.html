@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treneros.es - Noticias Ferroviarias</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Treneros.es ofrece las últimas noticias ferroviarias.">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
+        <button id="menu-toggle" aria-label="Abrir menú">
+            &#9776;
+        </button>
         <h1>Treneros.es</h1>
         <h2>Noticias Ferroviarias</h2>
     </header>
-    <nav>
+    <nav id="side-menu">
+        <button id="close-menu" aria-label="Cerrar menú">&times;</button>
         <ul>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            
         </ul>
     </nav>
     <main>
@@ -22,9 +27,7 @@
             <!-- Las noticias se insertarán aquí dinámicamente -->
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Treneros.es. Todos los derechos reservados.</p>
-    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

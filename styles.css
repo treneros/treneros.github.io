@@ -1,30 +1,51 @@
 /* Colores */
 :root {
-    --primary-color: #003366;
-    --secondary-color: #00509E;
-    --accent-color: #FFA500;
-    --background-color: #f4f4f4;
-    --text-color: #333;
-    --header-color: #333;
-    --nav-background: #444;
-    --nav-hover: #555;
-    --footer-background: #333;
-    --footer-text: white;
+    --primary-color: #006837; /* Verde primario */
+    --secondary-color: #00A63F; /* Verde secundario */
+    --accent-color: #FFC900; /* Acento */
+    --background-color: #F7F7F7; /* Fondo */
+    --text-color: #ffa500; /* Texto */
+    --header-background: var(--primary-color); /* Fondo de la cabecera */
+    --header-text: #ffffff; /* Texto de la cabecera */
+    --nav-background: var(--secondary-color); /* Fondo del menú */
+    --nav-border: #FFA500; /* Borde del menú */
+    --nav-hover: #005f28; /* Color de hover del menú */
+    --footer-background: var(--primary-color); /* Fondo del pie de página */
+    --footer-text: #ffffff; /* Texto del pie de página */
+    --menu-background: #006837; /* Fondo del menú lateral */
+    --menu-text: #ffffff; /* Texto del menú lateral */
+    --menu-hover: #FFC900; /* Color de hover del menú lateral */
+    --menu-border: #ffa500; /* Borde del menú lateral */
+    --menu-border-thickness: 6px; /* Grosor del borde del menú lateral */
+    --article-background: #ffffff; /* Fondo de los artículos */
+    --article-border: #ddd; /* Borde de los artículos */
+    --article-title: var(--primary-color); /* Color del título de los artículos */
+    --article-text: #666; /* Color del texto de los artículos */
+    --article-hover: #f1f1f1; /* Color de hover de los artículos */
 }
+/* Estilos generales */
+/* Estilos específicos para la página de noticias detallada */
 
+/* Estilos generales */
+/* Estilos específicos para la página de noticias detallada */
+
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--background-color); /* Mantenemos el fondo blanco */
     color: var(--text-color);
+    overflow-x: hidden; /* Evita desplazamiento horizontal cuando el menú está abierto */
 }
 
 header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--header-background);
+    color: var(--header-text);
     padding: 1rem 0;
     text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -35,35 +56,204 @@ header h1 {
 header h2 {
     margin: 0;
     font-size: 1.2rem;
-    color: #ddd;
+    color: var(--accent-color);
 }
 
-nav ul {
+/* Estilos específicos para la noticia */
+#noticia-detallada {
+    margin-right: 28rem;
+    margin-left: 28rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.titulonoticia {
+    background-color:#F7F7F7;
+}
+
+#noticia-detallada article {
+    background-color: var(--article-background); /* Mantenemos el fondo de la noticia */
+    border: 1px solid var(--article-border);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+#noticia-detallada header {
+    margin-bottom: 1rem;
+}
+
+#noticia-detallada h2 {
+    color: var(--primary-color); /* Cambiamos el color del titular a verde */
+    font-size: 2rem; /* Aumentamos el tamaño del titular */
+    margin-top: 0;
+}
+
+#noticia-detallada .subtitulo {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+#noticia-detallada .meta {
+    color: var(--article-text); /* Mantenemos el color del texto de la meta */
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#noticia-detallada .meta a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+#noticia-detallada .meta a:hover {
+    text-decoration: underline;
+}
+
+#noticia-detallada .imagen {
+    margin-bottom: 1rem;
+}
+
+#noticia-detallada .imagen img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#noticia-detallada .contenido {
+    line-height: 1.6;
+}
+
+#noticia-detallada .boton-volver {
+    background-color: var(--accent-color);
+    color: var(--header-text);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#noticia-detallada .boton-volver:hover {
+    background-color: var(--header-background);
+    color: var(--accent-color);
+}
+
+
+#menu-toggle {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--header-text);
+    cursor: pointer;
+}
+
+#menu-toggle:focus {
+    outline: none;
+}
+
+/* Estilos del menú lateral */
+#side-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: var(--menu-background);
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif; /* Fuente tipográfica */
+    padding-top: 50px; /* Espacio para el encabezado */
+}
+
+#h2.menu-tittle {
+    font-weight: bold;
+    color:#FFC900;
+    text-decoration: underline;
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
+    margin-bottom: 10px; /* Añade espacio entre el título y los elementos de la lista */
+    margin: 200px;
+}
+
+.menu-open #side-menu {
+    left: 0;
+}
+
+#side-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: var(--nav-background);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-nav ul li {
-    flex: 1 1 auto;
+#side-menu h2 {
+    padding: 0;
+    margin: 15px;
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+#side-menu ul li {
+    padding: 1rem;
+    border-bottom: 1px solid var(--nav-hover);
+}
+
+#side-menu ul li:last-child {
+    border-bottom: none; /* Eliminamos el borde inferior del último elemento de la lista */
+}
+
+#side-menu ul li a {
+    color: var(--menu-text);
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agregamos transición para el color del texto */
 }
 
-nav ul li a:hover {
-    background-color: var(--nav-hover);
+#side-menu ul li a:hover {
+    background-color: var(--menu-hover);
+    color: rgba(255, 255, 0, 0.8); /* Amarillo más opaco */
+}
+
+#close-menu {
+    position: absolute;
+    right: 1rem;
+    top: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--menu-text);
+    cursor: pointer;
+}
+
+#close-menu:focus {
+    outline: none;
+}
+
+#menu-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--menu-background);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Por encima del menú */
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--menu-text);
+}
+
+#menu-header img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.menu-open #side-menu {
+    left: 0;
 }
 
 main {
@@ -78,17 +268,19 @@ section#noticias {
 }
 
 .noticia {
-    background-color: white;
+    background-color: var(--article-background);
+    border: 1px solid var(--article-border);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
     text-decoration: none;
     color: inherit;
 }
 
 .noticia:hover {
     transform: scale(1.02);
+    background-color: var(--article-hover);
 }
 
 .noticia img {
@@ -102,9 +294,13 @@ section#noticias {
 }
 
 .noticia h2 {
-    color: var(--secondary-color);
+    color: var(--article-title);
     font-size: 1.5rem;
     margin-top: 0;
+}
+
+.noticia p {
+    color: var(--article-text);
 }
 
 footer {
@@ -115,6 +311,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1024px) {
@@ -132,17 +329,16 @@ footer {
         font-size: 1rem;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
-    nav ul li a {
-        padding: 10px;
-    }
-
     .noticia h2 {
         font-size: 1.25rem;
     }
-
-    
+    #noticia-detallada {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #main {
+        padding: 0%;
+    }
 }
