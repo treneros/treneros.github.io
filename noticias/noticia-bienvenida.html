@@ -6,22 +6,22 @@
 
     <title>Treneros.es - Noticia Detallada</title>
     <link rel="stylesheet" href="../styles.css">
-    <meta name="description" content="Treneros.es - Detalles de la Noticia">
-    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="Treneros.es, una web dedicada al ferrocarril que ofrece las útlimas y mejores noticias ferroviarias.">
+    <link rel="icon" href="../favicon-32x32.png">
 </head>
 <body>
     <header>
         <button id="menu-toggle" aria-label="Abrir menú">
             &#9776;
         </button>
-        <h1>Treneros.es</h1>
-        <h2>Detalles de la Noticia</h2>
+        <div id="enlace-container"></div>
+        <div id="titles-container"></div> <!-- Aquí se agregarán los títulos -->
     </header>
     <nav id="side-menu">
         <button id="close-menu" aria-label="Cerrar menú">&times;</button>
+        
         <ul>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            
         </ul>
     </nav>
     <main>
@@ -30,7 +30,7 @@
                 <header class="titulonoticia">
                     <h2>Treneros.es: La nueva web para los ferroviarios españoles
                     </h2>
-                    <p class="subtitulo">Subtítulo de la Noticia</p> <!-- Nuevo subtitulo -->
+                    <p class="subtitulo">Treneros.es trata de una página web de temática ferroviaria y un portal en línea diseñado específicamente para conectar a amantes del ferrocarril, desde aficionados hasta expertos, en un espacio donde puedan compartir su pasión, conocimientos y experiencias.</p> <!-- Nuevo subtitulo -->
                     
                 </header>
                 <div class="imagen">
@@ -59,7 +59,16 @@
             </article>
         </section>
     </main>
+    <section id="noticias" class="noticias0">
+        <!-- Las noticias se insertarán aquí dinámicamente -->
+    </section>
+    <style>
+        .noticias0 {
+            visibility: hidden;
+        }
+    </style>
     
     <script src="../script.js"></script>
+    <script src="../script2.js"></script>
 </body>
 </html>
