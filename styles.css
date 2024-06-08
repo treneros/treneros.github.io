@@ -23,11 +23,7 @@
     --article-text: #666; /* Color del texto de los artículos */
     --article-hover: #f1f1f1; /* Color de hover de los artículos */
 }
-/* Estilos generales */
-/* Estilos específicos para la página de noticias detallada */
 
-/* Estilos generales */
-/* Estilos específicos para la página de noticias detallada */
 
 /* Estilos generales */
 body {
@@ -40,13 +36,20 @@ body {
 }
 
 header {
-    background-color: var(--header-background);
-    color: var(--header-text);
+    background-color: var(--primary-color);
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+#titulo-enlace {
+    color: #333; /* Color de texto */
+    font-size: 28px; /* Tamaño de fuente */
+    font-weight: bold;
+}
+
 
 header h1 {
     margin: 0;
@@ -61,10 +64,8 @@ header h2 {
 
 /* Estilos específicos para la noticia */
 #noticia-detallada {
-    margin-right: 28rem;
-    margin-left: 28rem;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px auto 40px;
+    max-width: 800px;
 }
 
 .titulonoticia {
@@ -78,6 +79,13 @@ header h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
 }
+
+#enlace-container a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto de su contenedor */
+    cursor: pointer; /* Cambia el cursor a predeterminado */
+}
+
 
 #noticia-detallada header {
     margin-bottom: 1rem;

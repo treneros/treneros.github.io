@@ -18,7 +18,7 @@ const noticias = [
 const menuItems = [
     {
         texto: 'Noticias',
-        enlace: 'treneros.es/index.html'
+        enlace: 'treneros.github.io/index.html'
     },
     {
         texto: 'Contacto',
