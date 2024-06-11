@@ -1,65 +1,67 @@
-/* Colores */
 :root {
-    --primary-color: #006837; /* Verde primario */
-    --secondary-color: #00A63F; /* Verde secundario */
-    --accent-color: #FFC900; /* Acento */
-    --background-color: #F7F7F7; /* Fondo */
-    --text-color: #ffa500; /* Texto */
-    --header-background: var(--primary-color); /* Fondo de la cabecera */
-    --header-text: #ffffff; /* Texto de la cabecera */
-    --nav-background: var(--secondary-color); /* Fondo del menú */
-    --nav-border: #FFA500; /* Borde del menú */
-    --nav-hover: #005f28; /* Color de hover del menú */
-    --footer-background: var(--primary-color); /* Fondo del pie de página */
-    --footer-text: #ffffff; /* Texto del pie de página */
-    --menu-background: #006837; /* Fondo del menú lateral */
-    --menu-text: #ffffff; /* Texto del menú lateral */
-    --menu-hover: #FFC900; /* Color de hover del menú lateral */
-    --menu-border: #ffa500; /* Borde del menú lateral */
-    --menu-border-thickness: 6px; /* Grosor del borde del menú lateral */
-    --article-background: #ffffff; /* Fondo de los artículos */
-    --article-border: #ddd; /* Borde de los artículos */
-    --article-title: var(--primary-color); /* Color del título de los artículos */
-    --article-text: #666; /* Color del texto de los artículos */
-    --article-hover: #f1f1f1; /* Color de hover de los artículos */
+    --primary-color: #006837; 
+    --secondary-color: #00A63F; 
+    --accent-color: #FFC900; 
+    --background-color: #f7f7f7b8; 
+    --text-color: #333; 
+    --header-background: var(--primary-color); 
+    --header-text: #ffffff; 
+    --nav-background: #005f28; /* Nuevo color */
+    --nav-border: #FFA500; 
+    --nav-hover: #00A63F; /* Nuevo color */
+    --footer-background: var(--primary-color); 
+    --footer-text: #ffffff; 
+    --menu-background: #005f28; /* Nuevo color */
+    --menu-text: #ffffff; 
+    --menu-hover: #00A63F; /* Nuevo color */
+    --menu-border: #ffa500; 
+    --menu-border-thickness: 6px; 
+    --article-background: #ffffff; 
+    --article-border: #ddd; 
+    --article-title: var(--primary-color); 
+    --article-text: #666; 
+    --article-hover: #f1f1f1; 
 }
-
 
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Frutiger', sans-serif; /* Utilizando la fuente Frutiger */
     margin: 0;
     padding: 0;
-    background-color: var(--background-color); /* Mantenemos el fondo blanco */
+    background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden; /* Evita desplazamiento horizontal cuando el menú está abierto */
 }
 
 header {
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: var(--header-background);
+    color: var(--header-text);
     padding: 1rem 0;
     text-align: center;
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-#titulo-enlace {
-    color: #333; /* Color de texto */
-    font-size: 28px; /* Tamaño de fuente */
-    font-weight: bold;
-}
-
-
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 header h2 {
     margin: 0;
     font-size: 1.2rem;
     color: var(--accent-color);
+}
+
+#titulo-enlace {
+    color: var(--header-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#enlace-container a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto de su contenedor */
+    cursor: pointer; /* Cambia el cursor a predeterminado */
 }
 
 /* Estilos específicos para la noticia */
@@ -69,42 +71,37 @@ header h2 {
 }
 
 .titulonoticia {
-    background-color:#F7F7F7;
-}
-
-#noticia-detallada article {
-    background-color: var(--article-background); /* Mantenemos el fondo de la noticia */
-    border: 1px solid var(--article-border);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--background-color);
     padding: 1rem;
 }
 
-#enlace-container a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Hereda el color del texto de su contenedor */
-    cursor: pointer; /* Cambia el cursor a predeterminado */
+#noticia-detallada article {
+    background-color: var(--article-background);
+    border: 1px solid var(--article-border);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    line-height: 1.6;
 }
-
 
 #noticia-detallada header {
     margin-bottom: 1rem;
 }
 
 #noticia-detallada h2 {
-    color: var(--primary-color); /* Cambiamos el color del titular a verde */
-    font-size: 2rem; /* Aumentamos el tamaño del titular */
+    color: var(--article-title);
+    font-size: 2rem;
     margin-top: 0;
 }
 
 #noticia-detallada .subtitulo {
     font-size: 1.2rem;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     margin-bottom: 1rem;
 }
 
 #noticia-detallada .meta {
-    color: var(--article-text); /* Mantenemos el color del texto de la meta */
+    color: var(--article-text);
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
@@ -130,6 +127,7 @@ header h2 {
 
 #noticia-detallada .contenido {
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 #noticia-detallada .boton-volver {
@@ -145,7 +143,6 @@ header h2 {
     background-color: var(--header-background);
     color: var(--accent-color);
 }
-
 
 #menu-toggle {
     position: absolute;
@@ -175,17 +172,7 @@ header h2 {
     transition: left 0.3s ease;
     z-index: 1000;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    font-family: 'Arial', sans-serif; /* Fuente tipográfica */
-    padding-top: 50px; /* Espacio para el encabezado */
-}
-
-#h2.menu-tittle {
-    font-weight: bold;
-    color:#FFC900;
-    text-decoration: underline;
-    font-size: 1.5em; /* Ajusta el tamaño de la fuente según sea necesario */
-    margin-bottom: 10px; /* Añade espacio entre el título y los elementos de la lista */
-    margin: 200px;
+    padding-top: 50px;
 }
 
 .menu-open #side-menu {
@@ -199,8 +186,9 @@ header h2 {
 }
 
 #side-menu h2 {
-    padding: 0;
-    margin: 15px;
+    padding: 1rem;
+    color: var(--accent-color);
+    text-align: center;
 }
 
 #side-menu ul li {
@@ -216,12 +204,12 @@ header h2 {
     color: var(--menu-text);
     text-decoration: none;
     display: block;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Agregamos transición para el color del texto */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #side-menu ul li a:hover {
     background-color: var(--menu-hover);
-    color: rgba(255, 255, 0, 0.8); /* Amarillo más opaco */
+    color: var(--menu-background);
 }
 
 #close-menu {
@@ -237,31 +225,6 @@ header h2 {
 
 #close-menu:focus {
     outline: none;
-}
-
-#menu-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--menu-background);
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1001; /* Por encima del menú */
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--menu-text);
-}
-
-#menu-header img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-}
-
-.menu-open #side-menu {
-    left: 0;
 }
 
 main {
@@ -322,6 +285,86 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos de los comentarios */
+#comentarios {
+    margin-top: 40px;
+}
+
+#comentarios h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#comentarios-lista {
+    margin-bottom: 20px;
+}
+
+#formulario-comentario {
+    margin-bottom: 40px;
+}
+
+#formulario-comentario label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+#formulario-comentario input[type="text"],
+#formulario-comentario textarea {
+    width: 80%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: 1px solid var(--article-border);
+    border-radius: 4px;
+    background-color: white;
+    color: var(--text-color);
+    /* Agregando margen adicional a los lados */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#formulario-comentario textarea {
+    resize: vertical;
+}
+
+#formulario-comentario button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--header-text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#formulario-comentario button[type="submit"]:hover {
+    background-color: var(--header-background);
+    color: var(--primary-color);
+}
+
+/* Estilos generales para los comentarios */
+.comentario {
+    background-color: var(--article-background);
+    border: 1px solid var(--article-border);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.comentario strong {
+    color: var(--primary-color);
+}
+
+.comentario p {
+    margin: 5px 0;
+    color: var(--text-color);
+}
+
+
 @media (min-width: 1024px) {
     section#noticias {
         grid-template-columns: repeat(4, 1fr);
@@ -340,13 +383,23 @@ footer {
     .noticia h2 {
         font-size: 1.25rem;
     }
+    
     #noticia-detallada {
         margin-right: 0px;
         margin-left: 0px;
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    #main {
+
+    main {
         padding: 0%;
+    }
+
+    #menu-toggle {
+        font-size: 1.2rem;
+    }
+
+    #close-menu {
+        font-size: 1.2rem;
     }
 }
