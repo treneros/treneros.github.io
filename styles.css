@@ -384,6 +384,94 @@ footer {
     color: var(--primary-color);
 }
 
+/* Estilos para la sección Acerca de */
+#acerca-de {
+    background-color: var(--article-background);
+    border: 1px solid var(--article-border);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#acerca-de h1 {
+    color: var(--article-title);
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+#acerca-de p {
+    color: var(--article-text);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#acerca-de a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#acerca-de a:hover {
+    color: var(--primary-color);
+}
+
+/* Estilos para la sección de Contacto */
+#contacto {
+    background-color: var(--article-background);
+    border: 1px solid var(--article-border);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: var(--article-title);
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+#contacto p {
+    color: var(--article-text);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#contacto .email-contact a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contacto .email-contact a:hover {
+    color: var(--primary-color);
+}
+
+#contacto .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#contacto .redes-sociales a {
+    text-decoration: none;
+}
+
+#contacto .redes-sociales img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+#contacto .redes-sociales img:hover {
+    transform: scale(1.1);
+}
+
+
 @media (min-width: 1024px) {
     section#noticias {
         grid-template-columns: repeat(4, 1fr);
@@ -408,6 +496,12 @@ footer {
         margin-left: 0px;
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+
+    #noticia-detallada h2 {
+        color: var(--article-title);
+        font-size: 1.5rem;
+        margin-top: 0;
     }
 
     main {

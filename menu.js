@@ -5,7 +5,7 @@ const menuItems = [
         enlace: 'treneros.github.io/index.html'
     },
     {
-        texto: 'Contacto',
+        texto: 'Sobre Treneros.es',
         enlace: '#contacto'
     }
     // Puedes agregar más elementos aquí según sea necesario
