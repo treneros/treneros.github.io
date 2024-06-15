@@ -1,6 +1,6 @@
 // Array con los títulos y el enlace de la página principal
 const titulosArray = [
-    { titulo: "Treneros.es", enlace: "index.html" },
+    { titulo: "Treneros.es", enlace: "treneros.es/index.html" },
     "Noticias Ferroviarias"
 ];
 

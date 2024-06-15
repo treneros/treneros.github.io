@@ -1,16 +1,11 @@
 const noticias = [
-    {
-        titulo: 'Nueva Línea de Tren Inaugurada',
-        contenido: 'Se ha inaugurado una nueva línea de tren que conectará las principales ciudades del país...',
-        imagen: 'https://via.placeholder.com/300x200?text=Nueva+Línea+de+Tren',
-        enlace: 'https://www.ejemplo.com/nueva-linea'
-    },
+    
     {
         titulo: 'Treneros.es: La nueva web para los ferroviarios españoles',
         contenido: 'Treneros.es trata de una página web de temática ferroviaria y un portal en línea diseñado específicamente para conectar a amantes del ferrocarril, desde aficionados hasta expertos, en un espacio donde puedan compartir su pasión, conocimientos y experiencias.',
         imagen: 'noticias/imgsnoticias/LOGOTRENEROS-ES-[noticia].jpg',
         enlace: 'noticias/noticia-bienvenida.html'
-    }
+    },
     // Agrega más noticias aquí
 ];
 

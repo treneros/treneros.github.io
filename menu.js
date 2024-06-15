@@ -2,11 +2,11 @@
 const menuItems = [
     {
         texto: 'Noticias',
-        enlace: 'treneros.github.io/index.html'
+        enlace: 'treneros.es/index.html'
     },
     {
         texto: 'Sobre Treneros.es',
-        enlace: '#contacto'
+        enlace: 'treneros.es/acercade.html'
     }
     // Puedes agregar más elementos aquí según sea necesario
 ];
