@@ -2,7 +2,7 @@
 const menuItems = [
     {
         texto: 'Noticias',
-        enlace: 'treneros.es/index.html'
+        enlace: 'https://treneros.es'
     },
     {
         texto: 'Sobre Treneros.es',
