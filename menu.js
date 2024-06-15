@@ -2,11 +2,11 @@
 const menuItems = [
     {
         texto: 'Noticias',
-        enlace: 'https://treneros.es'
+        enlace: 'https://treneros.es/index.html'
     },
     {
         texto: 'Sobre Treneros.es',
-        enlace: 'treneros.es/acercade.html'
+        enlace: 'https://treneros.es/acercade.html'
     }
     // Puedes agregar más elementos aquí según sea necesario
 ];
