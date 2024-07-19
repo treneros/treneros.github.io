@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerData = {
         text: "© 2024 Treneros.es",
         socialLinks: [
-            { href: "#", imgSrc: "icons/x.jpg", alt: "X" },
+            { href: "https://x.com/treneros_es?s=21", imgSrc: "icons/x.jpg", alt: "X" },
             
         ]
     };
