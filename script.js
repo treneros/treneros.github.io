@@ -1,10 +1,10 @@
 const noticias = [
     
     {
-        titulo: 'Treneros.es: La nueva web para los ferroviarios españoles',
-        contenido: 'Treneros.es trata de una página web de temática ferroviaria y un portal en línea diseñado específicamente para conectar a amantes del ferrocarril, desde aficionados hasta expertos, en un espacio donde puedan compartir su pasión, conocimientos y experiencias.',
-        imagen: 'noticias/imgsnoticias/LOGOTRENEROS-ES-[noticia].jpg',
-        enlace: 'noticias/noticia-bienvenida.html'
+        titulo: 'Se cumplen dos años desde la inauguración de la línea de Alta Velocidad entre Plasencia y Badajoz',
+        contenido: 'Hoy se cumplen dos años desde la inauguración (para los viajeros) de la línea de Alta Velocidad entre Plasencia y Badajoz, además de la llegada de los trenes S-730 a Extremadura, el día 19 de Julio de 2022.',
+        imagen: 'noticias/imgsnoticias/f3a07191-160c-4ec1-ba8e-5a6792a98cea.jpeg',
+        enlace: 'noticias/se_cumplen_dos_anos_LAV_Plasencia_Badajoz.html'
     },
     // Agrega más noticias aquí
 ];
