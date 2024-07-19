@@ -71,6 +71,7 @@ header h2 {
 }
 
 .titulonoticia {
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif; /* Utilizando la fuente Palatino */
     background-color: var(--background-color);
     padding: 1rem;
 }
