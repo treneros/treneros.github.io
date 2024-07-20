@@ -1,17 +1,19 @@
 const noticias = [
     
     {
-        titulo: 'Se cumplen dos años desde la inauguración de la línea de Alta Velocidad entre Plasencia y Badajoz',
-        contenido: 'Hoy se cumplen dos años desde la inauguración (para los viajeros) de la línea de Alta Velocidad entre Plasencia y Badajoz, además de la llegada de los trenes S-730 a Extremadura, el día 19 de Julio de 2022.',
-        imagen: 'noticias/imgsnoticias/f3a07191-160c-4ec1-ba8e-5a6792a98cea.jpeg',
-        enlace: 'noticias/se_cumplen_dos_anos_LAV_Plasencia_Badajoz.html'
-    },
-    {
     titulo: 'ADIF Alta Velocidad licita la mejora del túnel de Santa Marina y otros elementos de la LAV por 3,4 millones de euros.',
     contenido: 'La empresa ADIF Alta Velocidad ha licitado dentro de la LAV Madrid-Extremadura, una mejora en el túnel de Santa Marina y otra en las pantallas anticolisión de aves en los viaductos de Pizarroso y Valdetravieso, por un total de 3,4 millones de euros.',
     imagen: 'noticias/imgsnoticias/adif_alta_velocidad_mejora_tunel_santa_marina_lav_3_4_millones_1.jpg',
     enlace: 'noticias/adif_alta_velocidad_mejora_tunel_santa_marina_lav_3_4_millones.html'
     },
+    
+    {
+        titulo: 'Se cumplen dos años desde la inauguración de la línea de Alta Velocidad entre Plasencia y Badajoz',
+        contenido: 'Hoy se cumplen dos años desde la inauguración (para los viajeros) de la línea de Alta Velocidad entre Plasencia y Badajoz, además de la llegada de los trenes S-730 a Extremadura, el día 19 de Julio de 2022.',
+        imagen: 'noticias/imgsnoticias/f3a07191-160c-4ec1-ba8e-5a6792a98cea.jpeg',
+        enlace: 'noticias/se_cumplen_dos_anos_LAV_Plasencia_Badajoz.html'
+    },
+    
     // Agrega más noticias aquí
 ];
 
