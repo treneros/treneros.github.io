@@ -6,6 +6,12 @@ const noticias = [
         imagen: 'noticias/imgsnoticias/f3a07191-160c-4ec1-ba8e-5a6792a98cea.jpeg',
         enlace: 'noticias/se_cumplen_dos_anos_LAV_Plasencia_Badajoz.html'
     },
+    {
+    titulo: 'ADIF Alta Velocidad licita la mejora del túnel de Santa Marina y otros elementos de la LAV por 3,4 millones de euros.',
+    contenido: 'La empresa ADIF Alta Velocidad ha licitado dentro de la LAV Madrid-Extremadura, una mejora en el túnel de Santa Marina y otra en las pantallas anticolisión de aves en los viaductos de Pizarroso y Valdetravieso, por un total de 3,4 millones de euros.',
+    imagen: 'noticias/imgsnoticias/adif_alta_velocidad_mejora_tunel_santa_marina_lav_3_4_millones_1.jpg',
+    enlace: 'noticias/adif_alta_velocidad_mejora_tunel_santa_marina_lav_3_4_millones.html'
+    },
     // Agrega más noticias aquí
 ];
 
