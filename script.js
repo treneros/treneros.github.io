@@ -2,7 +2,7 @@ const noticias = [
     
     {
     titulo: 'La estación de Montijo estrena su electrificación.',
-    contenido: 'Tras varias semanas de pruebas el pasado Lunes 22 de julio, los servicios Alvia 00190 y 00193 estrenaron la catenaria al detenerse en dicha estación.',
+    contenido: 'Tras varias semanas de pruebas, el pasado Lunes 22 de julio los servicios Alvia 00190 y 00193 (que paran en Montijo) estrenaron el tramo de catenaria por la estación.',
     imagen: 'noticias/imgsnoticias/Montijo_electrificacion_estreno_2.jpg',
     enlace: 'noticias/Montijo_estrena_la_electrificacion.html'
 },
