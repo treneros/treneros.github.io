@@ -1,6 +1,13 @@
 const noticias = [
     
     {
+    titulo: 'La estación de Montijo estrena su electrificación.',
+    contenido: 'Tras varias semanas de pruebas el pasado Lunes 22 de julio, los servicios Alvia 00190 y 00193 estrenaron la catenaria al detenerse en dicha estación.',
+    imagen: 'noticias/imgsnoticias/Montijo_electrificacion_estreno_1.jpg',
+    enlace: 'noticias/la_estacion_de_montijo_estrena_su_electrificacion.html'
+},
+    
+    {
     titulo: 'ADIF Alta Velocidad licita la mejora del túnel de Santa Marina y otros elementos de la LAV por 3,4 millones de euros.',
     contenido: 'La empresa ADIF Alta Velocidad ha licitado dentro de la LAV Madrid-Extremadura, una mejora en el túnel de Santa Marina y otra en las pantallas anticolisión de aves en los viaductos de Pizarroso y Valdetravieso, por un total de 3,4 millones de euros.',
     imagen: 'noticias/imgsnoticias/adif_alta_velocidad_mejora_tunel_santa_marina_lav_3_4_millones_1.jpg',
